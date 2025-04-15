@@ -27,9 +27,23 @@ namespace HelloWorldWinform
             lblTitle.Text = "쾅~~~";
         }
 
-        private void lblTitle_Click(object sender, EventArgs e)
+        private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void 프로그램정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formAbout1 = new FormAbout();
+            Form formAbout2 = new FormAbout();
+
+            // 모달(Modal) 창
+            formAbout1.Text = "모달창";
+            formAbout1.ShowDialog();
+
+            // 모달리스(Modeless) 창
+            formAbout2.Text = "모달리스 창";
+            formAbout2.Show();
         }
     }
 }
