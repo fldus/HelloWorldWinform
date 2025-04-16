@@ -17,13 +17,10 @@ namespace HelloWorldWinform
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void FormAbout_Load(object sender, EventArgs e)
-        {
+            System.Diagnostics.Process.Start("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", 
+                "https://github.com/fldus/HelloWorldWinform --incognito");  // --incognito : 시크릿모드
 
         }
     }
