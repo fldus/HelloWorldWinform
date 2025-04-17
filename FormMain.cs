@@ -56,6 +56,8 @@ namespace HelloWorldWinform
             openFileDialog.Filter = "텍스트 문서(*.txt)|*.txt|csv 파일(*.csv)|*.csv|모든 파일(*.*)|*.*";
             DialogResult result = openFileDialog.ShowDialog();
 
+            //textBox1.Text = openFileDialog.FileName;
+
             switch (result)
             {
                 case DialogResult.Cancel:
