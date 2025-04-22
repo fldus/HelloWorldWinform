@@ -72,5 +72,10 @@ namespace HelloWorldWinform
                     break;
             }
         }
+
+        private void 다른이름으로저장ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
