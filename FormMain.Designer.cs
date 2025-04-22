@@ -47,6 +47,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblFileName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblTextChanged = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -183,6 +184,7 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "글자를 입력해주세요~";
             this.textBox1.WordWrap = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox2
             // 
@@ -200,7 +202,8 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.lblFileName});
+            this.lblFileName,
+            this.lblTextChanged});
             this.statusStrip1.Location = new System.Drawing.Point(0, 368);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(724, 22);
@@ -219,6 +222,11 @@
             this.lblFileName.Name = "lblFileName";
             this.lblFileName.Size = new System.Drawing.Size(55, 17);
             this.lblFileName.Text = "제목없음";
+            // 
+            // lblTextChanged
+            // 
+            this.lblTextChanged.Name = "lblTextChanged";
+            this.lblTextChanged.Size = new System.Drawing.Size(0, 17);
             // 
             // FormMain
             // 
@@ -268,6 +276,7 @@
         private System.Windows.Forms.ToolStripMenuItem 저장ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 다른이름으로저장ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 새로만들기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel lblTextChanged;
     }
 }
 
